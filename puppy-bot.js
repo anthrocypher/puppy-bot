@@ -12,11 +12,9 @@ var irc = ircb({
     console.log('Connected');
     console.log('MOTD:\n');
     console.log(irc.motd);
+		irc.say('#nodebombrange', 'Are u rdy for some puppiez?');
 });
 
-irc.join('#nodebombrange', function (err) {
-  if (err) throw err;
-  console.log('Joined #nodebombrange');
-  irc.say('#nodebombrange', 'Are u rdy for some puppiez?');
-});
+
+
 
